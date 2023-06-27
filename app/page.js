@@ -1,6 +1,7 @@
 import Image from 'next/image';
 import Link from 'next/link';
 import oddspedia from '../public/oddspedia.png';
+import OddspediaWidget from './OddspediaWidget';
 import styles from './page.module.css';
 
 export default function Home() {
@@ -91,6 +92,10 @@ export default function Home() {
             Instantly deploy your Next.js site to a shareable URL with Vercel.
           </p>
         </a>
+
+        <div id="oddspedia-widget-container"></div>
+
+        <OddspediaWidget />
 
         <footer className={styles.footer}>
           <p>Data powered by Oddspedia</p>
