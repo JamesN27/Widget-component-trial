@@ -26,14 +26,11 @@ export default function OddspediaWidget() {
       };
 
       const initScript = document.createElement('script');
-      initScript.src = 'https://widgets.oddspedia.com/js/widget/init.js?widgetId=oddspediaWidgetOddsComparisonPopularSportsLeagues';
+      initScript.src =
+        'https://widgets.oddspedia.com/js/widget/init.js?widgetId=oddspediaWidgetOddsComparisonPopularSportsLeagues';
       initScript.async = true;
 
       document.getElementById('oddspedia-widget-container').appendChild(initScript);
-
-      return () => {
-        document.getElementById('oddspedia-widget-container').innerHTML = '';
-      };
     `;
 
     document.body.appendChild(script);
@@ -42,6 +39,4 @@ export default function OddspediaWidget() {
       document.body.removeChild(script);
     };
   }, []);
-
-  return <div id="oddspedia-widget-container"></div>;
 }
