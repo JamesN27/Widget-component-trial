@@ -8,3 +8,9 @@
 .footer {
   margin-top: auto;
 }
+
+.widgetContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

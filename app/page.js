@@ -12,9 +12,9 @@ export default function Home() {
         <p>This is the main content of the homepage.</p>
       </div>
 
-      <div id="oddspedia-widget-container"></div>
-
-      <OddspediaWidget />
+      <div className={styles.widgetContainer}>
+        <OddspediaWidget />
+      </div>
 
       <footer className={styles.footer}>
         <p>Data powered by Oddspedia</p>
